@@ -41,7 +41,7 @@ vscode.visual = {
 
 vscode.inactive = {
     a = { fg = colors.fg, bg = colors.bg, gui = 'bold' },
-    b = { fg = colors.inactive, bg colors.bg },
+    b = { fg = colors.inactive, bg = colors.bg },
     c = { fg = colors.inactive, bg = config.opts.transparent and 'NONE' or colors.bg },
 }
 
