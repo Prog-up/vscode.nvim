@@ -9,6 +9,7 @@ if vim.o.background == 'dark' then
     colors.bg = '#262626'
     colors.bg2 = '#373737'
     colors.fg = '#ffffff'
+    colors.gray = '#808080'
     colors.red = '#f44747'
     colors.green = '#4EC9B0'
     colors.blue = '#0a7aca'
@@ -20,6 +21,7 @@ else
     colors.bg = '#F5F5F5'
     colors.bg2 = '#E4E4E4'
     colors.fg = '#343434'
+    colors.gray = '#808080'
     colors.red = '#FF0000'
     colors.green = '#008000'
     colors.blue = '#AF00DB'
@@ -30,42 +32,42 @@ end
 
 vscode.normal = {
     a = { fg = vim.o.background == 'dark' and colors.fg or colors.bg, bg = colors.blue, gui = 'bold' },
-    b = { fg = colors.blue, bg = colors.lightblue },
+    b = { fg = colors.blue, bg = colors.gray },
     c = { fg = colors.fg, bg = config.opts.transparent and 'NONE' or colors.bg },
 }
 
 vscode.visual = {
     a = { fg = colors.bg, bg = colors.yellow, gui = 'bold' },
-    b = { fg = colors.yellow, bg = colors.lightblue },
+    b = { fg = colors.yellow, bg = colors.gray },
 }
 
 vscode.inactive = {
     a = { fg = colors.fg, bg = colors.bg, gui = 'bold' },
-    b = { fg = colors.inactive, bg = colors.lightblue },
+    b = { fg = colors.inactive, bg = colors.gray },
     c = { fg = colors.inactive, bg = config.opts.transparent and 'NONE' or colors.bg },
 }
 
 vscode.replace = {
     a = { fg = vim.o.background == 'dark' and colors.bg or colors.fg, bg = colors.red, gui = 'bold' },
-    b = { fg = colors.red, bg = colors.lightblue },
+    b = { fg = colors.red, bg = colors.gray },
     c = { fg = colors.fg, bg = config.opts.transparent and 'NONE' or colors.bg },
 }
 
 vscode.insert = {
     a = { fg = colors.bg, bg = colors.green, gui = 'bold' },
-    b = { fg = colors.green, bg = colors.lightblue },
+    b = { fg = colors.green, bg = colors.gray },
     c = { fg = colors.fg, bg = config.opts.transparent and 'NONE' or colors.bg },
 }
 
 vscode.terminal = {
     a = { fg = vim.o.background == 'dark' and colors.bg or colors.fg, bg = colors.green, gui = 'bold' },
-    b = { fg = colors.fg, bg = colors.lightblue },
+    b = { fg = colors.fg, bg = colors.gray },
     c = { fg = colors.fg, bg = config.opts.transparent and 'NONE' or colors.bg },
 }
 
 vscode.command = {
     a = { fg = vim.o.background == 'dark' and colors.bg or colors.fg, bg = colors.pink, gui = 'bold' },
-    b = { fg = colors.pink, bg = colors.lightblue },
+    b = { fg = colors.pink, bg = colors.gray },
     c = { fg = colors.fg, bg = config.opts.transparent and 'NONE' or colors.bg },
 }
 
